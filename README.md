@@ -5,7 +5,7 @@ A separate retro edition with two deliberately ugly neon buttons: **Skins** and 
 - The buttons and open window bounce around the screen. Movement continues while the mouse hovers over the UI. It pauses only during active dragging or typing.
 - A short bonk plays on each screen-edge bounce. A corner hit makes one bonk; hidden or unloaded UI stays silent.
 - Menu buttons and text fields make a short pop when clicked.
-- The supplied startup audio plays once, followed by the supplied spinning image and classic Batman transition. The image then disappears.
+- The supplied startup audio plays once, followed by the supplied image spinning at one turn per second and classic Batman transition. The image then disappears.
 - Skins includes Guns and Melees. Avatar uses a Roblox user ID, with Apply, Restore, and Unload controls.
 - Misc, presets, and individual shirt/pants/hat inputs are removed.
 - RightShift hides/reopens the entire interface; a previously saved menu key is respected. Hiding also ends the intro effects.
@@ -13,7 +13,7 @@ A separate retro edition with two deliberately ugly neon buttons: **Skins** and 
 - Unload and re-execution clean up sounds, animation callbacks, and temporary UI.
 
 ```lua
-loadstring(game:HttpGet("https://raw.githubusercontent.com/csoldschool/el-criminality/cc5f5202a712ceb73962b9f87d5daed44e1010bb/SkinAvatarRetro.luau"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/csoldschool/el-criminality/6e95c0e2de76cfbea0854cce0595f6bee8e1ebf2/SkinAvatarRetro.luau"))()
 ```
 
 Media is bundled into the script and cached locally using writefile and getcustomasset (or getsynasset). Executors without these APIs retain the menu but cannot play/display the custom media. The startup file was an MP4 despite its extension; its audio was converted to MP3.
